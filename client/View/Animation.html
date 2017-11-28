@@ -1,0 +1,116 @@
+<html lang="en" ng-app="app">
+ <body>
+<div class="row">
+    <h2></h2>
+</div>
+<div class="row">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Director</th>
+            </tr>
+        </thead>
+        <tbody>
+               <tr ng-repeat="home in home | filter : search"> <!-- Similar to a foreach loop, C#: foreach(var homes in home ){...} -->
+                <td>
+                    {{home.Id}}
+                </td>
+                <td>
+                    <img ng-src="{{ home.Poster}}" class="thumbnail animated flip movie-poster" style="width:280px;height:300px">
+                </td>
+                <td>
+                    <a href="#/{{home.Name}}/{{home.Id}}">{{home.Name}}</a>
+                </td>
+                <td>
+                    {{home.Director}}
+                </td>
+            </tr>
+            
+               <tr ng-repeat="cs in Cs | filter : search"> <!-- Similar to a foreach loop, C#: foreach(var cs in Cs ){...} -->
+                <td>
+                    {{cs.Id}}
+                </td>
+                <td>
+                    <img ng-src="{{ cs.Poster}}" class="thumbnail animated flip movie-poster" style="width:280px;height:300px">
+                </td>
+                <td>
+                    {{cs.Name}}
+                </td>
+                <td>
+                    <p style="align:justify;width:200px" >{{cs.Description}}</p>
+                </td>
+                <td>
+                    {{cs.Director}}
+                </td>
+            </tr>
+            </tbody>
+            <tbody>
+                 
+               <tr ng-repeat="mc in Mc | filter : search"> <!-- Similar to a foreach loop, C#: foreach(var cs in Cs ){...} -->
+                <td>
+                    {{mc.Id}}
+                </td>
+                <td>
+                    <img ng-src="{{ mc.Poster}}" class="thumbnail animated flip movie-poster" style="width:280px;height:300px">
+                </td>
+                <td>
+                    {{mc.Name}}
+                </td>
+                <td>
+                    <p style="align:justify;width:200px" >{{mc.Description}}</p>
+                </td>
+                <td>
+                    {{mc.Director}}
+                </td>
+            </tr>
+            </tbody>
+            <tbody>
+                 
+               <tr ng-repeat="sa in Sa | filter : search"> <!-- Similar to a foreach loop, C#: foreach(var cs in Cs ){...} -->
+                <td>
+                    {{sa.Id}}
+                </td>
+                <td>
+                    <img ng-src="{{ sa.Poster}}" class="thumbnail animated flip movie-poster" style="width:280px;height:300px">
+                </td>
+                <td>
+                    {{sa.Name}}
+                </td>
+                <td>
+                    <p style="align:justify;width:200px" >{{sa.Description}}</p>
+                </td>
+                <td>
+                    {{sa.Director}}
+                </td>
+            </tr>
+            </tbody>
+        <tbody>
+                 
+               <tr ng-repeat="sw in Sw | filter : search"> <!-- Similar to a foreach loop, C#: foreach(var cs in Cs ){...} -->
+                <td>
+                    {{sw.Id}}
+                </td>
+                <td>
+                    <img ng-src="{{ sw.Poster}}" class="thumbnail animated flip movie-poster" style="width:280px;height:300px">
+                </td>
+                <td>
+                    {{sw.Name}}
+                </td>
+                <td>
+                    <p style="align:justify;width:200px" >{{sw.Description}}</p>
+                </td>
+                <td>
+                    {{sw.Director}}
+                </td>
+            </tr>
+            </tbody>
+    </table>
+    
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+  <head>
+    <title>HAFJC-MOVIES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+   
+    <style>
+    
+   
+     body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/bg-sky.png);
+  background-repeat: repeat !important;
+  background-attachment: fixed;
+    padding-top: 60px;
+}
+a{
+  color:#123652;
+}
+
+
+h1{
+  margin:0;
+  font-size:25px;
+}
+.move-title{
+  font-size:19px;
+  color:#e0eaf9;
+  font-weight:bold;
+}
+
+p{
+  margin:15px 0;
+}
+
+
+
+.results,.noResults{
+  display:none;
+  margin-top:20px;
+   
+  
+}
+
+
+
+.result{
+  margin-bottom:12px;
+  border:1px solid #000;
+  background-color:#496D89;
+  padding:15px;
+  color:#fff;
+  border: 1px;
+border: 2px dotted;
+border: medium dashed #DAA520;
+ background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/bg-sky.png);
+  
+}
+
+.result > span{
+  width:45%;
+  
+  line-height:1.5em;
+}
+.result > span:not(:first-child){
+  float:left;
+}
+
+.reviews{
+  margin-top:10px;
+}
+
+.clear{clear:both;}
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+    
+
+button.input-group-addon {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  z-index: 999;
+  height: 34px;
+  width: 34px;
+}
+ 
+   
+    </style>
+     <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.js"></script>
+    <script src="App/app.js"></script>
+    <script src="App/controllers.js"></script>
+     <link rel="stylesheet" href="vendors/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/style.css">
+
+        <script type="text/javascript" src="vendors/angular.min.js"></script>
+   
+    
+
+    <!--<script src="/Scripts/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="/Style/CSS/bootstrap.css" />
+    <link rel="stylesheet" href="/Style/CSS/style.css" />
+   
+  <body>
+    <div class="container">
+      <div class="navbar navbar-fixed-top" style="background-color: #ffcc00;background: -moz-linear-gradient(top,  #ffcc00 0%, #ffcc00 8%, #ffcc00 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F8F8F8), color-stop(8%,#ffcc00), color-stop(100%,#ffcc00));">
+        <div class="navbar-inner" style="background-color: #F8F8F8;">
+          <div class="pull-left" style="margin-left:10%;font-size:25px">
+            </h1><a href="https://c9.io" class="brand" style="color:#003366;"><h1>HAFJC-MOVIES</h1></a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="page-header">
+      
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/home" style="color:#DAA520;">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#/details" style="color:#DAA520;">
+                        Movies
+                    </a>
+                </li>
+               <!-- <li>
+                    <a href="#/search" style="color:#DAA520;">
+                        Search
+                    </a>
+                </li>-->
+               
+                
+            </ul>
+            
+        </div>
+        
+    </nav>
+    
+
+    <div class="container">
+        <div id="ui-view" ui-view>
+            
+        </div>
+    </div>
+   <footer>
+     <nav class="navbar navbar-default">
+        <div class="container">
+            <ul>
+                <center><h5>@HAFJC-Movies2017</h5></center>
+            </ul>
+        </div>
+    </nav>
+   </footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+ <style>
+     
+ </style>
+ <span>
+         
+         <div class="move-title" style="color:black">{{movie.Title}} ({{movie.Year}})</div><br/>
+         <div><img ng-src="{{ movie.details.Poster=='N/A' ? 'http://placehold.it/150x220&text=N/A' : movie.details.Poster }}" class="thumbnail animated flip movie-poster"></div>
+         
+       </span>
+       
+       <span>
+         
+         <div style="color:black;text-align:justify">{{movie.details.Plot}}</div><br/>
+         <div style="color:black"><strong><span class="label label-primary">Staring :</span></strong> {{movie.details.Actors}}</div>
+         <div style="color:black"><strong><span class="label label-primary">Rated :</span></strong> {{movie.details.Rated}}</div>
+         <div style="color:black"><strong><span class="label label-primary">Runtime :</span></strong> {{movie.details.Runtime}}</div>
+         <div style="color:black"><strong><span class="label label-primary">Genre :</span></strong> {{movie.details.Genre}}</div>
+         <div style="color:black"><strong><span class="label label-primary">Directors :</span></strong> {{movie.details.Director}}</div>
+         <div style="color:black"><strong><span class="label label-primary">Writer :</span></strong> {{movie.details.Writer}}</div>
+         <div style="color:black"><strong><span class="label label-primary">Language :</span></strong> {{movie.details.Language}}</div>
+         <div style="color:black"><strong><span class="label label-primary">Studio :</span></strong> {{movie.details.Production}}</div>
+         
+         
+        
+         
+       </span>
+       
+       <div class="clear"></div>
+       
+       <div class="reviews" style="color:black">
+         
+         <em>IMDB Rating:<span class="label label-success"> {{movie.details.imdbRating}}</span> | Rotten Tomatoes Meter: <span class="label label-success">{{movie.details.tomatoMeter}} ({{movie.details.tomatoImage}}) </span> &nbsp;| Metascore: <span class="label label-success">{{movie.details.Metascore}}</span></em>
+         
+       </div> 
+       
+
+    </div>
+    <hr>

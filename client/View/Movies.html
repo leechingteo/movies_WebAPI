@@ -1,0 +1,164 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+   body {
+  font-family:Arial;
+  font-size:13px;
+  background:#f4f4f4;
+  line-height:20px;
+  color:#555;
+}
+
+    .movie1{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .movie2{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .movie3{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .movie4{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .movie5{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .movie6{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .movie7{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .movie8{
+        background:#fff;
+        padding:14px;
+        width:300px; 
+    }
+    .is-table-row {
+        display: table;
+    }
+    .is-table-row [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+    }
+    .movie-poster {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+</style>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+</script>
+
+
+<div class="row">
+    <h2>Movies-List</h2>
+</div>
+<div class="container" style="width:100%" ng-show="details"  ng-contoller="MoviesController"  >
+    
+    <div class="movie2 mySlides"  style="overflow: hidden;position:relative;margin: 0 auto; width:980px; height: 380px; ">
+      
+        
+      
+       
+       
+     
+    </div>
+    
+    <div class="movie4 mySlides"  style="overflow: hidden;position: relative;margin: 0 auto;width: 980px; height: 380px; ">
+      
+        
+      
+       
+       
+     
+    </div>
+    
+    
+    
+        
+</div>
+<br/>
+
+            
+            <div class="row is-table-row" ng-show="details" style="word-wrap: break-word; max-height: 80%;">
+            
+            <div class="movie1 col-sm-4" style="word-wrap: break-word; max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+          </div>
+          <div class="movie2 col-sm-4" style="word-wrap: break-word;max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+        
+            </div>
+            <div class="movie3 col-sm-4" style="word-wrap: break-word; max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+        
+            </div>
+            <div class="movie4 col-sm-4" style="word-wrap: break-word; max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+        
+            </div>
+          </div>
+          <div class="row is-table-row" ng-show="details" style="word-wrap: break-word; max-height: 80%;">
+            
+            <div class="movie5 col-sm-4" style="word-wrap: break-word; max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+          </div>
+          <div class="movie6 col-sm-4" style="word-wrap: break-word;max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+        
+            </div>
+            <div class="movie7 col-sm-4" style="word-wrap: break-word; max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+        
+            </div>
+            <div class="movie8 col-sm-4" style="word-wrap: break-word; max-height: 80%;alight:justify; padding-bottom:50px;height: auto !important;">
+            
+           
+        
+            </div>
+          </div>
+         
+          

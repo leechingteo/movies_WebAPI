@@ -1,0 +1,93 @@
+<html lang="en" ng-app="app">
+ 
+ <body>
+<div class="row">
+    <h2></h2>
+</div>
+<div class="container" ng-controller="searchMovies">
+
+    <h1>Search a Movie Title Below</h1>
+    
+    <form>
+      <div class="search">
+       <div class="input-group">
+            <input id="theSearch" ng-model="searchparam" placeholder="movie name" type="text" ngTrim="true" class="form-control" style="height:50px"/>
+           <span class="input-group-addon btn btn-primary" ng-click="fetch()">Search</span>
+       </div>
+       
+       <div class="clear"></div>
+      </div>
+    </form>
+   
+    <div class="results">
+
+      <div class="result" movie-srch-results ng-repeat="movie in movieResults | filter : searchparam ">
+          
+         
+      </div>
+       <div class="noResults">
+        
+       </div>
+   No record found.
+    
+  </div>
+ 
+ </div> 
+ <br/><br/>
+  
+  
+<!--//<div class="row">
+   //<table class="table">
+        //<thead>
+             //<tr>
+                // <th>Id</th>
+                 //<th>Image</th>
+                 //<th>Name</th>
+                 //<th>Director</th>
+             //</tr>
+         //</thead>
+        // <tbody>
+            <!--<tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Fight Club
+                </td>
+                <td>
+                    David Fincher
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 2
+                </td>
+                <td>
+                    Into The Wild
+                </td>
+                <td>
+                    Sean Penn 
+                </td>
+            </tr>
+
+            
+               //<tr ng-repeat="home in home | filter : search"> <!-- Similar to a foreach loop, C#: foreach(var homes in home ){...}
+                 //<td>
+                     //{{home.Id}}
+                 //</td>
+                <td>
+                     //<img ng-src="{{ home.Poster}}" class="thumbnail animated flip movie-poster" style="width:280px;height:300px">
+                </td>
+                <td>
+                    <a href="#/{{home.Name}}/{{home.Id}}">{{home.Name}}</a>
+                </td>
+                <td>
+                    {{home.Director}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  
+</div>-->
+</body>
+</html>
